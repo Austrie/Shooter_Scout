@@ -2,9 +2,9 @@
 from flask import Flask
 # import sys
 # sys.path.append('../')
-import initial_histogram as histogram
-import setup
-import random
+# import initial_histogram as histogram
+# import setup
+# import random
 # Made a new instance of the Flask class, with name of the module being the
 # variable so Flask knows attributes, files, etc. The reason we use '__name__'
 # instead of '__main__' is because if this file was imported, it wouldn't be
