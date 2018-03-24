@@ -31,6 +31,9 @@ module.exports = (env = {}) => {
       hot: true,
       open: true
     },
+    resolve: {
+      extensions: [".jsx", ".js"]
+    },
     module: {
       rules: [
         {

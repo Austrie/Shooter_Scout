@@ -8,6 +8,7 @@ import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
 
 import Dashboard from '../../views/Dashboard/';
+import UploadAudio from '../../views/UploadAudio/';
 
 class Full extends Component {
   render() {
@@ -20,6 +21,7 @@ class Full extends Component {
             <Breadcrumb />
             <Container fluid>
               <Switch>
+                <Route path="/upload-audio" name="UploadAudio" component={UploadAudio}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
