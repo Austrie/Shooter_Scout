@@ -14,7 +14,8 @@ app = Flask(__name__)
 # Creating a new base/home http route
 @app.route("/")
 def random_sentence():
-    return setup.test(1)
+    return hello_world()
+    # return setup.test(1)
     # index = random.randint(1, 10)
     # return histogram.random_word_histogram_with_word_frequency_factor(index)
 
