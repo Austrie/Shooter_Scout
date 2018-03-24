@@ -45,6 +45,7 @@
     "simple-line-icons": "2.4.1"
   },
   "scripts": {
+    "preinstall": "npm install --dev",
     "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --progress --color --inline --env.dev",
     "build": "webpack -p --progress --env.prod",
