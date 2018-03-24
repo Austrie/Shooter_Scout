@@ -1,10 +1,8 @@
 {
-  "name": "@coreui/react",
+  "name": "ShooterScout",
   "version": "1.0.10",
-  "description": "Open Source Bootstrap Admin Template",
-  "author": "Łukasz Holeczek",
-  "homepage": "http://coreui.io",
-  "copyright": "Copyright 2018 creativeLabs Łukasz Holeczek",
+  "description": "Intelligent Shooter Tracking System",
+  "author": "Shane Austrie",
   "license": "MIT",
   "private": true,
   "devDependencies": {

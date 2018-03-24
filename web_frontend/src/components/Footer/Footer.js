@@ -4,8 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="app-footer">
-        <span><a href="http://coreui.io">CoreUI</a> &copy; 2018 creativeLabs.</span>
-        <span className="ml-auto">Powered by <a href="http://coreui.io">CoreUI</a></span>
+        <span>ShooterScout &copy; 2018 by <a href="http://shaneaustrie.com">Shane Austrie</a> and <a href="http://kunalsharma.net">Kunal Sharma.</a></span>
       </footer>
     )
   }

@@ -11,8 +11,8 @@ class UploadAudio extends Component {
 
     const data = new FormData();
     data.append('file', this.uploadInput.files[0]);
-    data.append('filename', this.fileName.value);
 
+    console.log(this.uploadInput.files[0])
     fetch('https://scouterscout-backend.herokuapp.com/upload-audio', {
       method: 'POST',
       body: data,
