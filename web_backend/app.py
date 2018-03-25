@@ -37,7 +37,7 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route("/upload-audio", methods=["POST", "PUT"])
-@cross_origin()
+@cross_origin(origin="http://localhost:9090")
 def get_classification():
     # print(request, file=sys.stderr)
     if request.method == 'GET':
