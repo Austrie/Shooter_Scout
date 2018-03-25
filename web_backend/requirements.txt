@@ -1,2 +1,7 @@
 Flask
 gunicorn
+numpy
+librosa
+flask_cors
+werkzeug
+keras
