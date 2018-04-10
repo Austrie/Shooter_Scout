@@ -5,3 +5,4 @@ librosa
 flask_cors
 werkzeug
 keras
+tensorflow

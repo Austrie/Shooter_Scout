@@ -1,5 +1,5 @@
 # Bucket List API(Heroku deployment)
-Use "heroku git:remote -a scouterscout-backend; git subtree push --prefix web_backend heroku master" while in main folder to push to heroku.
+Use "heroku git:remote -a shooterscout-backend; git subtree push --prefix web_backend heroku master" while in main folder to push to heroku.
 
 
 The api enables you to create/ register a user within the application.
