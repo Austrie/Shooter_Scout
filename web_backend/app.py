@@ -79,9 +79,8 @@ def predict(filepath, model):
     return get_labels()[0][(final_prediction)]
 
 def get_labels():
-    return (['gun', 'notgun', 'notgunshot'], [0, 1, 2], [[1., 0., 0.],
-       [0., 1., 0.],
-       [0., 0., 1.]])
+    return (['notgunshot', 'gun'], [0, 1], [[1., 0.],
+       [0., 1.]])
 
 # Handy function to convert wav2mfcc
 def wav2mfcc(file_path, max_len=11):
