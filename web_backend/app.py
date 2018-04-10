@@ -43,7 +43,9 @@ def get_classification():
     if request.method == 'GET':
         return "Wrong location!"
     elif request.method == 'POST':
+        print("This is the length of files: " + str(len(request.files)))
         wave_file = request.files['file']
+        print("This is the wave file" + str(wave_file))
         model = load_model("my_model.h5")
         filename = str(time.time()).replace('.', '')
         filename = secure_filename(filename + ".wav")
