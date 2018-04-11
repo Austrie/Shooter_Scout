@@ -8,6 +8,7 @@ import time
 import os
 from werkzeug.utils import secure_filename
 from flask_cors import CORS, cross_origin
+from os.path import join
 # sys.path.append('../')
 # import initial_histogram as histogram
 # import setup
@@ -50,7 +51,12 @@ def get_classification():
         filename = str(time.time()).replace('.', '')
         filename = secure_filename(filename + ".wav")
         location = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        print(os.listdir('.'))
+        print("----")
+        print(os.listdir('./uploads'))
         wave_file.save(location)
+        print("----")
+        print(os.listdir('./uploads'))
         result = predict(location, model=model)
         os.remove(location)
         data = {
