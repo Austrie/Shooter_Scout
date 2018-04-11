@@ -51,6 +51,9 @@ def get_classification():
         filename = str(time.time()).replace('.', '')
         filename = secure_filename(filename + ".wav")
         location = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        directory = os.path.dirname(app.config['UPLOAD_FOLDER'])
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         print(os.listdir('.'))
         print("----")
         print(os.listdir('./uploads'))
