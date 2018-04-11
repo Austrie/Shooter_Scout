@@ -46,7 +46,7 @@ def get_classification():
         print("This is the length of files: " + str(len(request.files)))
         wave_file = request.files['file']
         print("This is the wave file" + str(wave_file))
-        model = load_model("my_model.h5")
+        model = load_model("./my_model.h5")
         filename = str(time.time()).replace('.', '')
         filename = secure_filename(filename + ".wav")
         location = os.path.join(app.config['UPLOAD_FOLDER'], filename)

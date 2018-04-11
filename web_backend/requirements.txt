@@ -6,3 +6,5 @@ flask_cors
 werkzeug
 keras
 tensorflow
+libhdf5
+h5py
