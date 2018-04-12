@@ -1,29 +1,27 @@
 package com.shaneaustrie.shooterscout;
 
 import android.app.Application;
+import android.support.annotation.NonNull;
 
-import cafe.adriel.androidaudioconverter.AndroidAudioConverter;
-import cafe.adriel.androidaudioconverter.callback.ILoadCallback;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.shaneaustrie.shooterscout.utils.Firebase;
+
 
 /**
  * Created by austrie on 4/10/18.
  */
 
 public class App extends Application {
+    private FirebaseAuth mAuth;
+
     @Override
     public void onCreate() {
         super.onCreate();
-//        AndroidAudioConverter.load(this, new ILoadCallback() {
-//            @Override
-//            public void onSuccess() {
-//                // Great!
-//                System.out.println("This the success");
-//            }
-//            @Override
-//            public void onFailure(Exception error) {
-//                // FFmpeg is not supported by device
-//                System.out.println("This the error ********" + error);
-//            }
-//        });
+        Firebase.setup();
     }
 }
